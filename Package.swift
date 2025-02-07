@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "4.0.2"
+let version = "4.0.7"
 let package = Package(
     name: "ZohoDeskPortalCommunity",
     platforms: [
@@ -16,12 +16,12 @@ let package = Package(
             targets: ["ZohoDeskPortalCommunity", "ZohoDeskPortalCommunityPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/zoho/ZohoDeskPortalConfiguration.git", exact: "4.0.2")
+        .package(url: "https://github.com/zoho/ZohoDeskPortalConfiguration.git", exact: "4.0.7")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZohoDeskPortalCommunity", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalCommunity/\(version)/ZohoDeskPortalCommunity.zip", checksum: "1047054231c0c6ddd3f5ff4b0a713b25debc784227a65e1cc91bc8fbbc8eb443"),
+        .binaryTarget(name: "ZohoDeskPortalCommunity", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalCommunity/\(version)/ZohoDeskPortalCommunity.zip", checksum: "957b0685e2c00b765e164a7153b191aa157be8f4331b21a6c90e09901a216dcc"),
         
         .target(
             name: "ZohoDeskPortalCommunityPackage",
